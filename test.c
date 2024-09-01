@@ -1,11 +1,17 @@
 #include <stdio.h>
 
-void main(){
+int main(){
 
-    char user[24];
+    char fname[24];
+    char lname[24];
 
-    printf("Input user's name: ");
+    printf("Input user's first name: ");
+    scanf("%23s", fname);
+
+    printf("Input user's last name: ");
+    scanf("%23s", lname);
+
+    printf("\nHello, %s %s!", fname, lname);
     
-    scanf("%s", &user);
-    printf("Hello, %s!", user);
+    return 0;
 }
